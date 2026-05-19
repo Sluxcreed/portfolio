@@ -59,6 +59,31 @@ header {
   color: #00bfff;
 }
 
+/* ===== BOTÃO TEMA ===== */
+
+#theme-button {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  font-size: 18px;
+
+  transition: 0.3s;
+}
+
+#theme-button:hover {
+  background-color: white;
+  color: #3b0000;
+  transform: scale(1.05);
+}
+
 /*  BOTÃO  */
 
 .btn {

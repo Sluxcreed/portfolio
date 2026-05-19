@@ -43,10 +43,15 @@ form.addEventListener("submit", function(event) {
 
 // ===== TEMA ESCURO =====
 
-const themeButton = document.getElementById("theme-button");
+const button = document.getElementById("theme-button");
 
-themeButton.addEventListener("click", function() {
-
+button.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 
+  // muda o ícone automaticamente
+  if (document.body.classList.contains("dark-mode")) {
+    button.textContent = "☀️";
+  } else {
+    button.textContent = "🌙";
+  }
 });

@@ -26,7 +26,7 @@
       </nav>
 
       <!-- Botão tema -->
-      <button id="theme-button" class="theme-button"> Tema 🌗 </button>
+      <button id="theme-button" class="theme-button">🌙</button>
     </div>
   </header>
 
@@ -139,38 +139,48 @@
   </section>
 
   <!-- ===== CONTATO ===== -->
-  <section id="contato" class="section bg">
-    <div class="container">
-      <h2>Contato</h2>
+<section id="contato" class="section bg">
+  <div class="container">
+    <h2>Contato</h2>
 
-      <form id="contact-form">
+    <form
+      id="contact-form"
+      action="https://formspree.io/f/xnjrnzql"
+      method="POST"
+    >
 
-        <input
-          type="text"
-          id="nome"
-          placeholder="Seu nome"
-        >
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        placeholder="Seu nome"
+        required
+      >
 
-        <input
-          type="email"
-          id="email"
-          placeholder="Seu e-mail"
-        >
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Seu e-mail"
+        required
+      >
 
-        <textarea
-          id="mensagem"
-          placeholder="Digite sua mensagem"
-        ></textarea>
+      <textarea
+        id="mensagem"
+        name="mensagem"
+        placeholder="Digite sua mensagem"
+        required
+      ></textarea>
 
-        <button type="submit" class="btn">
-          Enviar
-        </button>
+      <button type="submit" class="btn">
+        Enviar
+      </button>
 
-      </form>
+    </form>
 
-      <p id="feedback"></p>
-    </div>
-  </section>
+    <p id="feedback"></p>
+  </div>
+</section>
 
   <!-- ===== FOOTER ===== -->
   <footer>
