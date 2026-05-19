@@ -4,9 +4,6 @@ const form = document.getElementById("contact-form");
 
 form.addEventListener("submit", function(event) {
 
-  // Impede o envio padrão
-  event.preventDefault();
-
   // Campos
   const nome = document.getElementById("nome").value;
   const email = document.getElementById("email").value;
